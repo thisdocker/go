@@ -16,7 +16,8 @@ ENV GOROOT=/usr/local/go \
   GOPATH=/GoPath \
   GOROOT_BOOTSTRAP=/usr/local/go \
   GO111MODULE=on \
-  GOPROXY=https://athens.azurefd.net \
+  GOPROXY=https://goproxy.io \
+  # GOPROXY=https://athens.azurefd.net \
   # recommendation: move the required go bin file to /usr/local/bin/
   PATH=$PATH:/usr/local/go/bin
 
