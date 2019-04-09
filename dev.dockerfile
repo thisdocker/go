@@ -2,7 +2,7 @@ FROM wuyumin/upx
 
 LABEL maintainer="Yumin Wu"
 
-ARG GO_VERSION=1.12.2
+ARG GO_VERSION=1.12.3
 
 RUN wget https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz \
   && tar zxf go${GO_VERSION}.linux-amd64.tar.gz -C /usr/local \
