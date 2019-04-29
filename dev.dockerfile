@@ -27,4 +27,4 @@ WORKDIR "$GOPATH/src"
 
 # https://github.com/upx/upx
 
-CMD ["/bin/bash"]
+CMD ["/bin/bash","-l"]
