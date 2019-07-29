@@ -2,7 +2,7 @@ FROM wuyumin/upx
 
 LABEL maintainer="Yumin Wu"
 
-ARG GO_VERSION=1.12.6
+ARG GO_VERSION=1.12.7
 
 RUN wget https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz \
   && tar zxf go${GO_VERSION}.linux-amd64.tar.gz -C /usr/local \
@@ -16,8 +16,8 @@ ENV GOROOT=/usr/local/go \
   GOPATH=/GoPath \
   GOROOT_BOOTSTRAP=/usr/local/go \
   GO111MODULE=on \
-  GOPROXY=https://goproxy.io \
-  # GOPROXY=https://athens.azurefd.net \
+  GOPROXY=https://mirrors.aliyun.com/goproxy/ \
+  # GOPROXY=https://goproxy.io \
   # recommendation: move the required go bin file to /usr/local/bin/
   PATH=$PATH:/usr/local/go/bin
 
